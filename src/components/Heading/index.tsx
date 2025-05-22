@@ -1,4 +1,4 @@
-import styles from './Heading.module.css';
+import styles from './styles.module.css';
 
 type HeadingProps = {
   children: React.ReactNode; //esse tipo define que tudo que o react aceita como children estará contemplado nele
