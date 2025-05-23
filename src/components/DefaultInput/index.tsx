@@ -1,3 +1,5 @@
+import styles from './styles.module.css';
+
 //type: 'text' | 'number' | 'search'; //Union type: poderá usar ou um ou outro type adicionado
 type DefaultInputProps = {
   id: string;
@@ -14,7 +16,7 @@ export function DefaultInput({
   return (
     <>
       <label htmlFor={id}>{labelText}</label>
-      <input id={id} type={type} {...rest} />
+      <input className={styles.input} id={id} type={type} {...rest} />
     </>
   );
 }
