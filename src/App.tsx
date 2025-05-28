@@ -6,28 +6,13 @@ import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
 import { PlayCircleIcon } from 'lucide-react';
-import { Heading } from './components/Heading';
 import './styles/theme.css';
 import './styles/global.css';
 import { Footer } from './components/Footer';
-import { useState } from 'react';
 
 export function App() {
-  // Que todos os componentes que usam ''numero''
-  // saibam das mudanças no seu valor
-
-  // Sempre que eu usar useState, não vou usar atribuição diretamente, apenas a função índice 1 do array de useState
-  const [numero, setNumero] = useState(0);
-
-  function handleClick() {
-    setNumero((prevState) => prevState + 1);
-  }
-
   return (
     <>
-      <Heading>Número: {numero}</Heading>
-      <button onClick={handleClick}>Aumenta número</button>
-
       <Container>
         <Logo />
       </Container>
