@@ -1,5 +1,6 @@
 {
   "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
 
   // 🛠 Formatação e Lint
   "editor.defaultFormatter": "esbenp.prettier-vscode",
